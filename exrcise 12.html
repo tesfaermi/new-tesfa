@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>flex box</title>
+<link rel="stylesheet" href="styles/lesson12.f.css">
+<style>
+  .container{
+    border: none;
+    display: flex;
+    width: 300px;
+    
+    margin: 0;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+  .profile-pic{
+    border-radius: 23px;
+    height: 46px;
+  
+  }
+  .profile-info{
+    margin-left: 10px;
+    margin-right: auto;
+  }
+  .oliver{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .cat{
+    color: rgb(180, 179, 179);
+  }
+  .follow-button{
+    background-color: rgb(30, 114, 224);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 15px;
+    height: 34px;
+    font-size: 17px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 2px 15px;
+  }
+
+  .all-thing{
+    border: 2px solid rgb(194, 191, 191);
+    width: 530px;
+    border-radius: 5px;
+    
+  }
+
+  .first-row{
+    margin: 15px auto 20px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(126, 125, 125);
+    font-size: 20px;
+  }
+  .second-row{
+    display: flex;
+  }
+  .second-row-first-column{
+    width: 70px;
+    border-radius: 35px;
+    margin: 10px 10px 30px 20px;
+  }
+
+  .second-column-first-row{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    
+  }
+  .second-column-second-row{
+   font-weight: bold;
+   font-size: 25px;
+   
+  }
+  .second-row-second-column{
+    width: 400px;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .second-column-third-row{
+   color: rgb(126, 125, 125);
+  }
+  .all{
+    display: flex;
+    width: fit-content;
+    margin-top: 30px;
+  }
+  .button-like{
+    border: 1px solid rgb(185, 179, 179);
+    border-radius: 10px;
+    margin: 10px 10px 10px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    height: 65px;
+  }
+  .first-horizontal-layout{
+    display: flex;
+  }
+  .first-vertical-layout{
+    height: 50px;
+    border-radius: 25px;
+    margin: 5px 5px auto 5px;
+  }
+  .empty{
+    border: none;
+    margin-right: ;
+    border-radius: 10px;
+    width: 25%;
+    background-color: grey;
+  }
+  </style>
+  </head>
+  <body>
+  <div style="border: 1px solid rgb(200, 200, 200);
+  width: 300px;
+  border-radius: 6px;
+  margin-bottom: 30px;
+">
+    <div class="flexbox">
+      <div>Home</div>
+      <div class="notifications">14</div>
+    </div>
+  <div class="flexbox">
+    <div>Notifications</div>
+  <div class="notifications">3</div>
+</div>
+<div class="flexbox">
+  <div>Messages</div>
+  <div class="notifications">5</div>
+</div>
+  </div>
+
+<div class="header">
+  <div>Home</div>
+  <div><input type="text" class="search" placeholder="Search"></div>
+  <div><button class="download">Download</button></div>
+</div>
+
+
+  <div class="container">
+    <div><img class="profile-pic" src="thumbenail-1.png"></div>
+    <div class="profile-info"><span class="oliver">oliver</span><br><span class="cat">the cat <br> Popular</span></div>
+    <div><button class="follow-button">Follow</button></div>
+  </div>
+
+  <div class="container">
+    <div><img class="profile-pic" src="thumbenail-2.png"></div>
+    <div class="profile-info"><span class="oliver">Mimi</span><br><span class="cat">Sleepy Cat <br> Popular</span></div>
+    <div><button class="follow-button">Follow</button></div>
+  </div>
+
+  <div class="container">
+    <div><img class="profile-pic" src="thumbenail-3.png"></div>
+    <div class="profile-info"><span class="oliver">Rex</span><br><span class="cat">Happy Bulldog <br> Popular</span></div>
+    <div><button class="follow-button">Follow</button></div>
+  </div>
+
+
+  <div style="display: flex; margin-bottom: 30px; margin-top: 20px;">
+    <div style="  background-color: lightpink;  width: 100px;  height: 70px; display: flex; align-items: center; justify-content: center;"><span style="background-color: black;  color: white; font-size: 22px;">item1</span></div>
+    <div style="  background-color: lightblue;  width: 200px;  height: 70px;"></div>
+  </div>
+
+  <div style="display: flex; margin-bottom: 30px; margin-top: 20px;">
+    <div style="  background-color: lightpink;  width: 100px;  height: 70px; display: flex; align-items: center; justify-content: center;"></div>
+    <div style="  background-color: lightblue;  width: 200px;  height: 70px;">
+    <div style="font-size: 22px; ">row1</div>
+    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 20px; color: white;">
+      <div style="font-size: 22px; background-color: black;">row2</div>
+    <div style="font-size: 22px; background-color: black;">row2</div>
+    </div>
+  </div>
+  </div>
+
+
+<div class="all-thing">
+  <div class="first-row">ALL INBOXES</div>
+  <div class="second-row">
+    <div><img  class="second-row-first-column" src="thumbenail-1.png"></div>
+    <div class="second-row-second-column">
+      <div class="second-column-first-row">
+        <div class="second-column-second-row">Chewy Promotions</div>
+        <div class="second-column-third-row">4:58 PM</div>
+      </div>
+    
+      <div class="second-column-second-row">Biggest sales of the year!</div>
+
+      <div class="second-column-third-row" style="font-size: 17px; font-weight: 550; margin-top: 10px;">Hey there! We're writing to tell you about our...</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="all">
+  <div><img  class="first-vertical-layout" src="thumbenail-1.png"></div>
+  <div class="second-vertical-layout">
+  <div class="first-horizontal-layout">
+    <div>supersimple.dev</div>
+    <div>@SuperimpleDev</div>
+  </div>
+  <div class="second-horizontal-layout">
+    What is backend web development? A complete<br>overview. New video is up!
+  </div>
+  <div class="third-horizontal-layout">
+    <div class="button-like">
+      <div class="empty">empty</div>
+      <div>
+        <div class="youtube"></div>
+        <div>Backend web development - a <br>complete overview (2021)</div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+  </body>
+</html>
